@@ -12,4 +12,6 @@ but for now it's really simple (because I needed the core functionality fast).
 To ship it with your project, you can use [pyinstaller](https://pyinstaller.org/en/stable/usage.html) (`--onefile` flag advised),
 or use one of the builds my future self will probably make.
 
+P.S. : Be carefull with paths in install_config.json, make sure to use `\\` on Windows and `/` on UNIX, shutil is very sensible to this for some reason.
+
 *anything that only requires files or folders to be copied for now...
