@@ -1,27 +1,23 @@
 [
   {
     "type": "start",
-    "base_path": "C:\\Program Files\\Autodesk\\Navisworks Manage 2022",
-    "message": "This will install Actemium NavisworksExporter Plugin at \"{base_path}\", proceed?"
+    "base_path": "path that will be prepended before every dest",
+    "message": "Confirm install message, some format like {base_path} are supported"
   },
   {
     "type": "folder",
-    "folder": "./NavisworksExporter",
+    "folder": "folder_to_copy",
     "whole": true,
-    "dest": "Plugins/"
+    "comment": "if whole == true, then the folder itself is copied, else only its contents",
+    "dest": "destination_folder_path"
   },
   {
     "type": "file",
-    "file": "./Aspose.3D.dll",
-    "dest": "dependencies/"
-  },
-  {
-    "type": "file",
-    "file": "./PriorityQueue.dll",
-    "dest": "dependencies/"
+    "file": "file_to_copy.___",
+    "dest": "destination_folder_path"
   },
   {
     "type": "end",
-    "message": "Actemium NavisworksExporter Plugin successfully installed!"
+    "message": "Succesfull installation message"
   }
 ]
