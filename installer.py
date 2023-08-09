@@ -2,7 +2,6 @@ from pathlib import Path
 from traceback import format_exc
 import json
 import shutil
-import sys
 
 from tkinter import messagebox#, Tk
 # from tkinter.ttk import Progressbar
@@ -57,5 +56,10 @@ def main():
 if __name__ == "__main__":
     try:
         main()
+    except PermissionError as e:
+        messagebox.showerror(
+            title="Missing permission",
+            message="This installation process requires administrator permissions, please run as administrator."
+        )
     except Exception as e:
         messagebox.showerror(title="Error", message=format_exc())
