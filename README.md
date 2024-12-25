@@ -1,5 +1,7 @@
 # Generic Install Wizard in Python
 
+(This is an abandonned project)
+
 This is a generic install wizard made in python that can be configured to install anything*!</br>
 The goal is to avoid having to make a custom wizard for each application,
 since every message, every step of the installation can be configured in a single json.
